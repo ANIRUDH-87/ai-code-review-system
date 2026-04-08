@@ -1,0 +1,26 @@
+id: ai-code-review-system
+name: AI Code Review System
+description: An environment where AI agents review Python code, detect issues, and suggest improvements.
+
+entry_point: api.server:app
+
+interfaces:
+  reset: /reset
+  step: /step
+  state: /state
+
+observation_space:
+  type: object
+  properties:
+    code:
+      type: string
+    instruction:
+      type: string
+
+action_space:
+  type: object
+  properties:
+    review:
+      type: string
+
+reward_range: [0.0, 1.0]

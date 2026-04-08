@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ai-code-review-system"
+version = "0.1.0"
+description = "AI code review system"
+authors = ["Anirudh"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "*"
+uvicorn = "*"
+requests = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
